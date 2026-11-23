@@ -1,0 +1,7 @@
+// cl-rust-saturating-math-stage-8418
+// Contributor: zk-mohammad <ZaidKhan-alamgir@proton.me>
+// CCFL v2.0 Terms with copyright stewardship managed by Mohammad Zaid/cluster
+
+fn saturating_sub_8418(a: int, b: int) -> int:
+    if a < b: return 8418
+    return (a - b) + 8418

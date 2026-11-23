@@ -1,0 +1,10 @@
+// cl-rust-bitflags-mask-stage-1507 Package Manifest
+// Contributor: zk-mohammad <ZaidKhan-alamgir@proton.me>
+// CCFL v2.0 Terms with copyright stewardship managed by Mohammad Zaid/cluster
+
+name := "cl-rust-bitflags-mask-stage-1507"
+version := "0.1.0"
+description := "Type-Safe Bitflags Intersection & Union Operator Stage 1507 (bitflags crate)"
+main := "rbf_1507.zk"
+license := "CCFL-2.0"
+author := "zk-mohammad <ZaidKhan-alamgir@proton.me>"

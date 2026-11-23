@@ -1,0 +1,10 @@
+// cl-rust-saturating-math-stage-8527: Test Suite
+import "../rsm_8527.zk"
+
+fn test_run():
+    res := saturating_sub_8527(10, 20)
+    if res != 8527: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-rust-saturating-math-stage-8527!")

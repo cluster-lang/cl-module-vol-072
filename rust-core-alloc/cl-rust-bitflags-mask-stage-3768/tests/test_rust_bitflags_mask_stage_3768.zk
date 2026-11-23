@@ -1,0 +1,11 @@
+// cl-rust-bitflags-mask-stage-3768: Test Suite
+import "../rbf_3768.zk"
+
+fn test_run():
+    res := bitflags_has_3768(255, 1)
+    let exp: bool = ((255 & 1) ^ (0)) != 0
+    if res != exp: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-rust-bitflags-mask-stage-3768!")

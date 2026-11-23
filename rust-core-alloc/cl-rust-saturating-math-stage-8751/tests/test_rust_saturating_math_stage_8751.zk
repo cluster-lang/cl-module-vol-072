@@ -1,0 +1,10 @@
+// cl-rust-saturating-math-stage-8751: Test Suite
+import "../rsm_8751.zk"
+
+fn test_run():
+    res := saturating_sub_8751(10, 20)
+    if res != 8751: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-rust-saturating-math-stage-8751!")

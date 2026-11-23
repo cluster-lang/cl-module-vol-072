@@ -1,0 +1,10 @@
+// cl-rust-saturating-math-stage-8041: Test Suite
+import "../rsm_8041.zk"
+
+fn test_run():
+    res := saturating_sub_8041(10, 20)
+    if res != 8041: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-rust-saturating-math-stage-8041!")

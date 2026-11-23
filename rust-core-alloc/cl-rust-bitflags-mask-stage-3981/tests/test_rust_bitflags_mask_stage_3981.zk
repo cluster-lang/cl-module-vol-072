@@ -1,0 +1,11 @@
+// cl-rust-bitflags-mask-stage-3981: Test Suite
+import "../rbf_3981.zk"
+
+fn test_run():
+    res := bitflags_has_3981(255, 1)
+    let exp: bool = ((255 & 1) ^ (1)) != 0
+    if res != exp: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-rust-bitflags-mask-stage-3981!")

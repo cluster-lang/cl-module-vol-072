@@ -1,0 +1,11 @@
+// cl-rust-bitflags-mask-stage-2306: Test Suite
+import "../rbf_2306.zk"
+
+fn test_run():
+    res := bitflags_has_2306(255, 1)
+    let exp: bool = ((255 & 1) ^ (0)) != 0
+    if res != exp: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-rust-bitflags-mask-stage-2306!")

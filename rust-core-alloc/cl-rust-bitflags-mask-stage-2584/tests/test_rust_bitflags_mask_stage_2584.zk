@@ -1,0 +1,11 @@
+// cl-rust-bitflags-mask-stage-2584: Test Suite
+import "../rbf_2584.zk"
+
+fn test_run():
+    res := bitflags_has_2584(255, 1)
+    let exp: bool = ((255 & 1) ^ (0)) != 0
+    if res != exp: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-rust-bitflags-mask-stage-2584!")

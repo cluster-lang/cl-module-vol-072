@@ -1,0 +1,10 @@
+// cl-rust-saturating-math-stage-8576: Test Suite
+import "../rsm_8576.zk"
+
+fn test_run():
+    res := saturating_sub_8576(10, 20)
+    if res != 8576: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-rust-saturating-math-stage-8576!")

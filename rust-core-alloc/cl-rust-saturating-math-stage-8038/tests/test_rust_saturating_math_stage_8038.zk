@@ -1,0 +1,10 @@
+// cl-rust-saturating-math-stage-8038: Test Suite
+import "../rsm_8038.zk"
+
+fn test_run():
+    res := saturating_sub_8038(10, 20)
+    if res != 8038: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-rust-saturating-math-stage-8038!")
